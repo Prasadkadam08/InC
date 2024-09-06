@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.page-5{
+    width: 100%;
+    height: 100vh;
+    /* overflow-x:hidden; */
+    font-family: "Comfortaa", sans-serif;
+}
+.main-head {
+    margin-top: 0.5vw;
+    width: 100%;
+    height: 10vh;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8vh;
+    margin-top: 3vh;
+}
+.main-head h1{
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 5vw;
+}
+.main-head h2{
+    font-size: 2vw;
+}
+.main-head span{
+    background-color: #fcca46;
+    padding: 0.5vw;
+    border-radius: 1vw;
+}
+.article-container{
+    width: 100vw;
+    margin: 1vw;
+    columns: 4;
+    column-gap: 2vw;
+    margin-top: 5vh;
+}
+.art-1 , .art-2 , .art-3 ,  .art-4 , .art-5, .art-6, .art-7, .art-8, .art-9, .art-10{
+    width: auto;
+    height: auto;
+    margin-bottom: 1vh;
+    background-color: #adb5bd;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.art-1 img , .art-2 img , .art-3 img ,.art-4 img,.art-5 img,.art-6 img,.art-7 img,.art-8 img,.art-9 img,.art-10 img{
+    max-width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+}
+.overlay-txt-1 , .overlay-txt-2 , .overlay-txt-3 ,.overlay-txt-4,.overlay-txt-5,.overlay-txt-6,.overlay-txt-7,.overlay-txt-8,.overlay-txt-9,.overlay-txt-10{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2vw;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    padding: 1vw;
+    border-radius: 1vw;
+    z-index: 10;
+}
+.overlay-txt-1 , .overlay-txt-2 , .overlay-txt-3 ,.overlay-txt-4 ,.overlay-txt-5 ,.overlay-txt-6 ,.overlay-txt-7 ,.overlay-txt-8 ,.overlay-txt-9 ,.overlay-txt-10 {
+    text-decoration: none;
+    color: white;
+}
+.art-1:hover .overlay-txt-1 ,.art-2:hover .overlay-txt-2 ,.art-3:hover .overlay-txt-3 ,.art-4:hover .overlay-txt-4,.art-5:hover .overlay-txt-5,.art-6:hover .overlay-txt-6,.art-7:hover .overlay-txt-7,.art-8:hover .overlay-txt-8,.art-9:hover .overlay-txt-9,.art-10:hover .overlay-txt-10{
+    opacity: 1;
+    background-color: #3d5a80;
+}
+.info-section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-section-1 h1{
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+.info-section-1 a button{
+    font-size: 1vw;
+    padding: 0.2vw;
+    border-radius: 10px;
+    margin-right: 1vw;
+}
